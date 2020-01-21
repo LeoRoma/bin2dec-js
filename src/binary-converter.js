@@ -7,7 +7,9 @@ class BinaryConverter {
     var digit = parseInt(binary, 2);
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
-    } else {
+    } else if (binary.match(0) === false || !!binary.match(1) === false){
+      return ("Please insert only 0 or 1")
+    }else {
       return digit;
       console.log(digit)
     }
