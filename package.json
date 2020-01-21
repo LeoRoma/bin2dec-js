@@ -1,0 +1,26 @@
+{
+  "name": "bin2dec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoRoma/bin2dec-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoRoma/bin2dec-js/issues"
+  },
+  "homepage": "https://github.com/LeoRoma/bin2dec-js#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
