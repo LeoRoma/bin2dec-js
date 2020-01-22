@@ -15,7 +15,7 @@ describe('BinaryConverter', () => {
     expect(binaryconverter.converter('0101010101')).toEqual('Please insert a maximum of 8 digits');
   });
 
-  test('Valid input only 0 or 1', () => {
-    expect(binaryconverter.converter('02')).toEqual('Please insert only 0 or 1');
+  test('Invalid input only 0 or 1', () => {
+    expect(binaryconverter.converter('02')).toEqual('Invalid input, please insert only 0 or 1');
   })
 })
