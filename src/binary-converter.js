@@ -24,4 +24,4 @@ class BinaryConverter {
 }
 
 
-module.exports = BinaryConverter;
+// module.exports = BinaryConverter;
