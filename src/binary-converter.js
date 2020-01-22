@@ -1,11 +1,7 @@
 class BinaryConverter {
-  constructor() {
-    this.binaries = ""
-  }
 
-  converter(binary) {
+  input(binary) {
     let reversedBinary = binary.split('').reverse();
-    let decimal = 0;
 
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
