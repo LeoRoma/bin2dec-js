@@ -1,4 +1,7 @@
 class BinaryConverter {
+  constructor() {
+    this.decimal = 0
+  }
 
   input(binary) {
     if (binary.length > 9) {
@@ -12,12 +15,11 @@ class BinaryConverter {
 
   convert(binary) {
     let reversedBinary = binary.split('').reverse();
-    let decimal = 0;
 
     for (let i = (reversedBinary.length - 1); i >= 0; i--) {
-      decimal += Math.pow(reversedBinary[i] * 2, i)
+      this.decimal += Math.pow(reversedBinary[i] * 2, i)
     }
-    return decimal;
+    return this.decimal;
   }
 }
 
