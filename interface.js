@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     console.log("hello")
     console.log(binary)
-    // binaryconverter.input(binary);
+    binaryconverter.input(binary);
 
     // // create new `li` HTMLElement and insert
     // // innerHTML with note content and id

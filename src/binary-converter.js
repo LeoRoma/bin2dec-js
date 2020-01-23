@@ -4,6 +4,7 @@ class BinaryConverter {
   }
 
   input(binary) {
+    console.log("hi")
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
     } else if (binary.includes("0") === false || binary.includes("1") === false) {
