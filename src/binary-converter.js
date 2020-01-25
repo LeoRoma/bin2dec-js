@@ -4,7 +4,7 @@ class BinaryConverter {
   }
 
   input(binary) {
-    console.log("hi")
+    console.log(binary)
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
     } else if (binary.includes("0") === false || binary.includes("1") === false) {
@@ -20,7 +20,8 @@ class BinaryConverter {
     for (let i = (reversedBinary.length - 1); i >= 0; i--) {
       this.decimal += Math.pow(reversedBinary[i] * 2, i)
     }
-    return this.decimal;
+    // return this.decimal;
+    console.log(this.decimal)
   }
 }
 
