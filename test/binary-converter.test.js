@@ -13,21 +13,28 @@ describe('BinaryConverter', () => {
 
   describe('Invalid input', () => {
     test('#1', () => {
-      expect(binaryconverter.input('02')).toEqual('Invalid input, please insert only 0 or 1');
+      let binary1 = '02'
+      expect(binaryconverter.input(binary1)).toEqual('Invalid input, please insert only 0 or 1');
     });
 
     test('#2', () => {
-      expect(binaryconverter.input('334455')).toEqual('Invalid input, please insert only 0 or 1');
+      let binary2 = '334455'
+      expect(binaryconverter.input(binary2)).toEqual('Invalid input, please insert only 0 or 1');
+    });
+
+    test('#3', () => {
+      let binary3 = '01234567'
+      expect(binaryconverter.input(binary3)).toEqual('Invalid input, please insert only 0 or 1');
     });
   });
 
 
   describe('convert binary in decimal', () => {
     test('#1', () => {
-      let binary1 = '1111';
+      let binary1 = '0101';
       binaryconverter.input(binary1);
       // binaryconverter.convert(binary1)
-      expect(binaryconverter.decimal).toEqual(15);
+      expect(binaryconverter.decimal).toEqual(5);
     });
 
     test('#2', () => {
@@ -37,9 +44,9 @@ describe('BinaryConverter', () => {
     })
 
     test('#3', () => {
-      let binary3 = '1111';
+      let binary3 = '0000';
       binaryconverter.input(binary3);
-      expect(binaryconverter.decimal).toEqual(15);
+      expect(binaryconverter.decimal).toEqual(0);
     })
   });
 })
