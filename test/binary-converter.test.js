@@ -24,21 +24,22 @@ describe('BinaryConverter', () => {
 
   describe('convert binary in decimal', () => {
     test('#1', () => {
-      let binary1 = '01010101';
-      binaryconverter.convert(binary1)
-      expect(binaryconverter.decimal).toEqual(85);
+      let binary1 = '1111';
+      binaryconverter.input(binary1);
+      // binaryconverter.convert(binary1)
+      expect(binaryconverter.decimal).toEqual(15);
     });
 
     test('#2', () => {
-      let binary2 = '1111'
-      binaryconverter.convert(binary2)
-      expect(binaryconverter.decimal).toEqual(15);
+      let binary2 = '11111'
+      binaryconverter.input(binary2);
+      expect(binaryconverter.decimal).toEqual(31);
     })
 
     test('#3', () => {
-      let binary3 = '0001';
-      binaryconverter.convert(binary3)
-      expect(binaryconverter.decimal).toEqual(1);
+      let binary3 = '1111';
+      binaryconverter.input(binary3);
+      expect(binaryconverter.decimal).toEqual(15);
     })
   });
 })

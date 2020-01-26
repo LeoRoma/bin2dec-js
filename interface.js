@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let binary = getBinary.value;
     
   
-    binaryconverter.input(binary);
-    // binaryconverter.convert(binary);
+    // binaryconverter.input(binary);
+    binaryconverter.convert(binary);
 
     // // create new `li` HTMLElement and insert
     // // innerHTML with note content and id
