@@ -31,10 +31,10 @@ describe('BinaryConverter', () => {
 
   describe('convert binary in decimal', () => {
     test('#1', () => {
-      let binary1 = '0101';
+      let binary1 = '1010';
       binaryconverter.input(binary1);
       // binaryconverter.convert(binary1)
-      expect(binaryconverter.decimal).toEqual(5);
+      expect(binaryconverter.decimal).toEqual(10);
     });
 
     test('#2', () => {

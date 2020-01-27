@@ -4,22 +4,29 @@ class BinaryConverter {
   }
 
   input(binary) {
-    let reversedBinary = binary.split('').reverse();
+    let newBinary = binary.split('');
 
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
     };
-    for (let i = (reversedBinary.length - 1); i >= 0; i--) {
-
-      if (reversedBinary[i] < 0 || reversedBinary[i] > 1) {
+    for (let i = 0; i < binary.length; i++) {
+      if (newBinary[i] < 0 || newBinary[i] > 1) {
         return ('Invalid input, please insert only 0 or 1');
       } else {
-        this.decimal += ((reversedBinary[i] * 2) ** i);
-        // console.log(this.decimal)
+        this.decimal *= 2;
+        this.decimal += +newBinary[i];
+
       }
     }
     return this.decimal;
   }
+
+
+
+
+  // for(let i = 0; i <num.length; i++) {
+  // dec *= 2;
+  // dec += +num[i];
 }
 
 module.exports = BinaryConverter;
