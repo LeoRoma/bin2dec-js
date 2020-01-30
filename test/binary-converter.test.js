@@ -14,17 +14,20 @@ describe('BinaryConverter', () => {
   describe('Invalid input', () => {
     test('#1', () => {
       let binary1 = '02'
-      expect(binaryconverter.input(binary1)).toEqual('Invalid input, please insert only 0 or 1');
+      binaryconverter.input(binary1)
+      expect(binaryconverter.convert(binary1)).toEqual('Invalid input, please insert only 0 or 1');
     });
 
     test('#2', () => {
       let binary2 = '334455'
-      expect(binaryconverter.input(binary2)).toEqual('Invalid input, please insert only 0 or 1');
+      binaryconverter.input(binary2)
+      expect(binaryconverter.convert(binary2)).toEqual('Invalid input, please insert only 0 or 1');
     });
 
     test('#3', () => {
       let binary3 = '01234567'
-      expect(binaryconverter.input(binary3)).toEqual('Invalid input, please insert only 0 or 1');
+      binaryconverter.input(binary3)
+      expect(binaryconverter.convert(binary3)).toEqual('Invalid input, please insert only 0 or 1');
     });
   });
 
