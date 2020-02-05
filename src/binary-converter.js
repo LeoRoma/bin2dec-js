@@ -6,7 +6,7 @@ class BinaryConverter {
   input(binary) {
     if (binary.length > 9) {
       return ("Please insert a maximum of 8 digits")
-    };
+    }
     this.convert(binary);
   }
 
@@ -24,4 +24,4 @@ class BinaryConverter {
   }
 }
 
-module.exports = BinaryConverter;
+// module.exports = BinaryConverter;
